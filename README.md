@@ -1,4 +1,4 @@
-# Climate Prediction Challenges with Machine Learning
+# Climate Prediction Challenges with Machine Learning Project 2 Group 6
 ### Spring 2025 ([Syllabus](CourseInfo/CPC-Spring2025-Syllabus.md))
 #### A climate data science course from [LEAP STC](https://leap.columbia.edu)
 
