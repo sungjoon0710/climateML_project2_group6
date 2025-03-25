@@ -1,41 +1,20 @@
-# Project 2: Parameterizing Vertical Mixing Coefficients in the Ocean Surface Boundary Layer Using Neural Networks
+Topic: Improving the parameterization vertical mixing in the ocean surface boundary layer using a bidirectional long short-term memory neural networl
 
-In this project, you will extend existing work on parameterization of upper ocean mixing using a neural network (Sane et al. 2023), and write a "data story" that can be shared with a scientific audience. You will need to learn basic concepts of upper ocean mixing, understand why these critical small-scale processes must be represented in ocean and climate models, and how machine learning can be used to bridge existing gaps in this space. 
+There are no dependencies besides those of the original starter code. 
 
-The starter notebook reproduces and extends a portion of the analysis from Sane et al. (2023), "Parameterizing vertical mixing coefficients in the ocean surface boundary layer using neural networks." The study explores the use of machine learning techniques to improve the parameterization of vertical mixing coefficients in the ocean surface boundary layer.
+All data should be precomputed and present in the data folder.
 
-## Folder Structure
+Term: Spring 2025
 
-To reduce the complexity of the main notebook, we have developed three additional scripts in the lib/ directory. You can also use these as they are in your project, modify these, or choose not to use them. 
+Team #6
 
-Please make your primary notebook the full "data story" and use a comparable file structure for helper files. 
+Team members
 
-```bash
-Project2-Parameterization/
-├── Data/                 
-│   ├── README.md         # Detailed information on data sources
-├── lib/                  # Utility scripts and helper functions
-│   ├── func_file.py
-│   ├── visual_figure3.py
-│   ├── visual_figure4.py
-├── notebooks/            # Jupyter notebooks for experiments
-│   ├── Project2_Starter.ipynb
-├── README.md             # Project documentation
-```
+Ian Shuman
+Sungjoon Park
+Alessandro Castillo
 
-## **Running this Notebook**:
+Project Summary: In this project, we attempt to improve on the first Multilayer Perceptron (MLP) neural network used by Sane et al.’s 2023 paper “Parameterizing vertical mixing coefficients in the ocean surface boundary layer using neural networks” to predict the shape function of vertical diffusivity in the ocean. We do this by altering the architecture of the neural network and by optimizing the model with different activation functions, batch normalization techniques, node-specific weights, and learning rates. Ultimately, a bidirectional long short-term memory model with a tanh activation function, node-specific weights from adaptive optimization, and weight decay was the best performing model. This new model improved the validation loss from ~0.05 to <0.03 and reduced the error around a few, bimodal output nodes, resulting in a dramatic improvement in the prediction of the shape function of the vertical diffusivity gradient compared to the orignial MLP model used by Sane et al.
 
-This notebook is designed for use on LEAP-Pangeo's GPU cluster (Pytorch option).
 
-## **Contribution statement**: ([more information and examples](doc/a_note_on_contributions.md))  
-
-Following [suggestions](http://nicercode.github.io/blog/2013-04-05-projects/) by [RICH FITZJOHN](http://nicercode.github.io/about/#Team) (@richfitz).
-
-GitHub Sharing: Recommended for collaborative coding and version control.
-
-We have prepared a [GitHub Tutorial](https://github.com/leap-stc/LEAPCourse-Climate-Pred-Challenges/blob/main/Tutorials/Github-Tutorial.md) to assist with this process.
-
-If you encounter any issues, feel free to reach out.
-
-## References
-Sane et al. (2023), "Parameterizing vertical mixing coefficients in the ocean surface boundary layer using neural networks." Journal of Advances in Modeling Earth Systems, 15(10), e2023MS003890.
+Contribution Statement: All group members contributed to the design of the study. Ian developed code for the adaptive node-specific weighting,  learn-rate scheduler, bidirectional LSTM, and plots of the input features and gradients of the inputs (not used). Ian also wrote the text of this data story. Sungjoon developed code for expanding the use of model weights, implementing the LSTM, and plotting the observed and predicted shape functions of vertical diffusivity. Sungjoon also collated the group’s code into a working script for the data story and managed the team’s GitHub. Alessandro developed code for implementing a spatial neural network (not used) and the convolutional neural network. All team members contributed to the GitHub repository and prepared the presentation. All team members approve our work presented in our GitHub repository including this contribution statement.
