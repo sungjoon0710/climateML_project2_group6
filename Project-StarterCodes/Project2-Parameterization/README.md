@@ -6,6 +6,9 @@ There are no dependencies besides those of the original starter code.
 
 All data should be precomputed and present in the data folder.
 
+Visualization of Initial Model (2fc) vs Final Model (LSTM-Bi): </link>https://docs.google.com/presentation/d/1A7AaQA6_y3JIf1RZ-5hNoQC-CKxzVdPtN1Sg7DmRMs4/edit?usp=sharing<link>
+
+
 Term: Spring 2025
 ## Team members
 
@@ -17,3 +20,4 @@ Project Summary: In this project, we attempt to improve on the first Multilayer 
 
 
 Contribution Statement: All group members contributed to the design of the study. Ian developed code for the adaptive node-specific weighting,  learn-rate scheduler, bidirectional LSTM, and plots of the input features and gradients of the inputs (not used). Ian also wrote the text of this data story. Sungjoon developed code for expanding the use of model weights, implementing the LSTM, and plotting the observed and predicted shape functions of vertical diffusivity. Sungjoon also collated the group’s code into a working script for the data story and managed the team’s GitHub. Alessandro developed code for implementing a spatial neural network (not used) and the convolutional neural network. All team members contributed to the GitHub repository and prepared the presentation. All team members approve our work presented in our GitHub repository including this contribution statement.
+
