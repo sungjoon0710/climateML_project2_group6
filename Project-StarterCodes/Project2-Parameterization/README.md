@@ -1,18 +1,17 @@
-Topic: Improving the parameterization vertical mixing in the ocean surface boundary layer using a bidirectional long short-term memory neural networl
+# Topic: Improving the parameterization vertical mixing in the ocean surface boundary layer using a bidirectional long short-term memory neural networl
+
+## Project 2, Team #6
 
 There are no dependencies besides those of the original starter code. 
 
 All data should be precomputed and present in the data folder.
 
 Term: Spring 2025
+## Team members
 
-Team #6
-
-Team members
-
-Ian Shuman
-Sungjoon Park
-Alessandro Castillo
+**Ian Shuman**
+**Sungjoon Park**
+**Alessandro Castillo**
 
 Project Summary: In this project, we attempt to improve on the first Multilayer Perceptron (MLP) neural network used by Sane et al.’s 2023 paper “Parameterizing vertical mixing coefficients in the ocean surface boundary layer using neural networks” to predict the shape function of vertical diffusivity in the ocean. We do this by altering the architecture of the neural network and by optimizing the model with different activation functions, batch normalization techniques, node-specific weights, and learning rates. Ultimately, a bidirectional long short-term memory model with a tanh activation function, node-specific weights from adaptive optimization, and weight decay was the best performing model. This new model improved the validation loss from ~0.05 to <0.03 and reduced the error around a few, bimodal output nodes, resulting in a dramatic improvement in the prediction of the shape function of the vertical diffusivity gradient compared to the orignial MLP model used by Sane et al.
 
