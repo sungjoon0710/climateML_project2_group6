@@ -1,4 +1,4 @@
-# Topic: Improving the parameterization vertical mixing in the ocean surface boundary layer using a bidirectional long short-term memory neural networl
+# Topic: Improving the parameterization vertical mixing in the ocean surface boundary layer using a bidirectional long short-term memory neural networks
 
 ## Project 2, Team #6
 
