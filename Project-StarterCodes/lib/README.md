@@ -2,6 +2,8 @@
 
 This directory contains essential utility scripts for Project 2. These scripts support data preprocessing, model implementation, and visualization.
 
+>>Disregard commits here, they were in response to Galen's rogue email<<
+
 ## Contents
 - func_file.py - Defines neural network architectures and data preprocessing functions.
 - visual_figure3.py - Calculates the linear correlation coefficient to evaluate model performance with different hyperparameters and visualizes the results. Plots illustrate model accuracy and training convergence.
